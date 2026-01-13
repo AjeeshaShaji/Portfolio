@@ -1,81 +1,55 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
-const Navbar = () => {
+function Navbar() {
   return (
-    <>
-      {/* ===== NAVBAR CSS (SAME FILE) ===== */}
-      <style>{`
-        .navbar {
-          width: 100%;
-          height: 70px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 60px;
-          background:  #f8fafc;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-          position: sticky;
-          top: 0;
-          z-index: 1000;
-          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
+    <nav className="sticky top-0 z-50 w-full bg-slate-50 shadow-md">
+      <div className="max-w-7xl mx-auto h-[70px] px-6 md:px-14 flex items-center justify-between font-sans">
+        
+        {/* Logo */}
+        <h2 className="text-2xl font-bold text-gray-900">
+          Portfolio
+        </h2>
 
-        .logo {
-          font-size: 1.6rem;
-          font-weight: 700;
-          color: #0c0c0c;
-        }
+        {/* Links */}
+        <ul className="flex gap-4 md:gap-8">
+          <li>
+            <a
+              href="#about"
+              className="text-gray-800 font-medium px-3 py-1.5 rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white"
+            >
+              About
+            </a>
+          </li>
 
-        .nav-links {
-          list-style: none;
-          display: flex;
-          gap: 30px;
-        }
+          <li>
+            <a
+              href="#projects"
+              className="text-gray-800 font-medium px-3 py-1.5 rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white"
+            >
+              Projects
+            </a>
+          </li>
 
-        .nav-links li a {
-          text-decoration: none;
-          font-size: 1rem;
-          font-weight: 500;
-          color: #1f2937;
-          padding: 6px 10px;
-          border-radius: 6px;
-          transition: all 0.3s ease;
-        }
+          <li>
+            <a
+              href="#education"
+              className="text-gray-800 font-medium px-3 py-1.5 rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white"
+            >
+              Education
+            </a>
+          </li>
 
-        .nav-links li a:hover {
-          background: #0c0c0c;
-          color: #ffffff;
-        }
-
-        /* ===== Mobile Responsive ===== */
-        @media (max-width: 768px) {
-          .navbar {
-            padding: 0 20px;
-          }
-
-          .nav-links {
-            gap: 15px;
-          }
-
-          .nav-links li a {
-            font-size: 0.95rem;
-          }
-        }
-      `}</style>
-
-      {/* ===== JSX ===== */}
-      <nav className="navbar">
-        <h2 className="logo">Portfolio</h2>
-
-        <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/education">Education</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li>
+            <a
+              href="#contact"
+              className="text-gray-800 font-medium px-3 py-1.5 rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white"
+            >
+              Contact
+            </a>
+          </li>
         </ul>
-      </nav>
-    </>
+      </div>
+    </nav>
   );
 };
 

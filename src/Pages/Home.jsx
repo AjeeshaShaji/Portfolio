@@ -1,16 +1,27 @@
 import PersonalDetails from "../Components/PersonalDetails";
-import About from "./About";
-import Contact from "./Education";
+import Projects from "./Projects";
 import Education from "./Education";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div>
-      <PersonalDetails />
-      <About/>
-      <Education/>
-      <Contact/>
-    </div>
+    <>
+      <section id="about">
+        <PersonalDetails />
+      </section>
+
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="education">
+        <Education />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+    </>
   );
 };
 
