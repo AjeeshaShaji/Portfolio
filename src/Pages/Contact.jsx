@@ -1,75 +1,90 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { Mail, Phone, Linkedin, Github } from "lucide-react";
 
 function Contact() {
   return (
-    <section className="min-h-screen bg-gray-50 px-4 py-16">
+    <section
+      id="contact"
+      className="min-h-screen bg-[#2b2b2b] px-6 md:px-16 py-20"
+    >
       <div className="max-w-6xl mx-auto">
 
-        {/* Page Title */}
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+        {/* Title */}
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16"
+        >
           Contact Me
-        </h1>
+        </motion.h1>
 
-        <div className="space-y-10">
+        {/* Contact Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="border border-gray-600 p-10 max-w-3xl mx-auto"
+        >
+          <h2 className="text-2xl font-semibold text-white mb-8 text-center">
+            Get in Touch
+          </h2>
 
-          {/* Contact Card */}
-          <div className="bg-white rounded-2xl shadow-md p-8">
-            <h2 className="text-2xl font-semibold text-indigo-600 mb-6">
-              Get in Touch
-            </h2>
+          <ul className="space-y-6 text-gray-400">
 
-            <ul className="space-y-4 text-gray-600">
-              {/* Email */}
-              <li className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-medium text-gray-800">Email:</span>
-                <a
-                  href="mailto:ajeeshashaji2357@gmail.com"
-                  className="text-indigo-600 hover:underline break-all"
-                >
-                  ajeeshashaji2357@gmail.com
-                </a>
-              </li>
+            {/* Email */}
+            <li className="flex items-center gap-4">
+              <Mail className="w-6 h-6 text-white" />
+              <a
+                href="mailto:ajeeshashaji2357@gmail.com"
+                className="hover:text-white transition break-all"
+              >
+                ajeeshashaji2357@gmail.com
+              </a>
+            </li>
 
-              {/* Phone */}
-              <li className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-medium text-gray-800">Contact:</span>
-                <a
-                  href="tel:+918078005929"
-                  className="text-indigo-600 hover:underline"
-                >
-                  +91 80780 05929
-                </a>
-              </li>
+            {/* Phone */}
+            <li className="flex items-center gap-4">
+              <Phone className="w-6 h-6 text-white" />
+              <a
+                href="tel:+918078005929"
+                className="hover:text-white transition"
+              >
+                +91 80780 05929
+              </a>
+            </li>
 
-              {/* LinkedIn */}
-              <li className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-medium text-gray-800">LinkedIn:</span>
-                <a
-                  href="https://www.linkedin.com/in/ajeesha-shaji-191b98311"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-indigo-600 hover:underline break-all"
-                >
-                  linkedin.com/in/ajeesha-shaji
-                </a>
-              </li>
+            {/* LinkedIn */}
+            <li className="flex items-center gap-4">
+              <Linkedin className="w-6 h-6 text-white" />
+              <a
+                href="https://www.linkedin.com/in/ajeesha-shaji-191b98311"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white transition break-all"
+              >
+                linkedin.com/in/ajeesha-shaji
+              </a>
+            </li>
 
-              {/* GitHub */}
-              <li className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-medium text-gray-800">GitHub:</span>
-                <a
-                  href="https://github.com/AjeeshaShaji"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-indigo-600 hover:underline break-all"
-                >
-                  github.com/AjeeshaShaji
-                </a>
-              </li>
-            </ul>
-          </div>
+            {/* GitHub */}
+            <li className="flex items-center gap-4">
+              <Github className="w-6 h-6 text-white" />
+              <a
+                href="https://github.com/AjeeshaShaji"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white transition break-all"
+              >
+                github.com/AjeeshaShaji
+              </a>
+            </li>
 
-        </div>
+          </ul>
+        </motion.div>
       </div>
     </section>
   );

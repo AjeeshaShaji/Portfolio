@@ -1,73 +1,101 @@
 import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+  FaGitAlt,
+} from "react-icons/fa";
+import { SiExpress, SiMongodb } from "react-icons/si";
+
+const skills = [
+  {
+    icon: <FaHtml5 />,
+    title: "HTML5",
+    desc: "Semantic, accessible markup for modern web apps",
+  },
+  {
+    icon: <FaCss3Alt />,
+    title: "CSS3",
+    desc: "Responsive layouts with modern styling techniques",
+  },
+  {
+    icon: <FaJs />,
+    title: "JavaScript",
+    desc: "ES6+, async logic, DOM manipulation",
+  },
+  {
+    icon: <FaReact />,
+    title: "React",
+    desc: "Component-based UI, hooks, routing",
+  },
+  {
+    icon: <FaNodeJs />,
+    title: "Node.js",
+    desc: "Server-side logic & API development",
+  },
+  {
+    icon: <SiExpress />,
+    title: "Express.js",
+    desc: "RESTful APIs & middleware architecture",
+  },
+  {
+    icon: <SiMongodb />,
+    title: "MongoDB",
+    desc: "NoSQL database & schema design",
+  },
+  {
+    icon: <FaGitAlt />,
+    title: "Git & GitHub",
+    desc: "Version control & collaboration",
+  },
+];
 
 function Skills() {
   return (
-    <section className="min-h-screen bg-gray-50 px-4 py-16">
-      <div className="max-w-6xl mx-auto">
-        
-        {/* Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+    <section className="min-h-screen bg-[#2b2b2b] px-6 md:px-16 py-20">
+      <div className="max-w-7xl mx-auto">
+
+        {/* HEADING */}
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16"
+        >
           Skills
-        </h1>
+        </motion.h1>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          
-          {/* Programming Languages */}
-          <div className="bg-white rounded-2xl shadow-md p-6">
-            <h2 className="text-xl font-semibold text-indigo-600 mb-4">
-              Programming Languages & Core Technologies
-            </h2>
-            <p className="text-gray-600">
-              HTML5, CSS3, JavaScript (ES6+)
-            </p>
-          </div>
-
-          {/* Frameworks & Libraries */}
-          <div className="bg-white rounded-2xl shadow-md p-6">
-            <h2 className="text-xl font-semibold text-indigo-600 mb-4">
-              Frameworks & Libraries
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              React.js, Node.js, Express.js, React Router, Redux / Context API,
-              Multer, Socket.io, JWT (JSON Web Token), Nodemailer
-            </p>
-          </div>
-
-          {/* Databases */}
-          <div className="bg-white rounded-2xl shadow-md p-6">
-            <h2 className="text-xl font-semibold text-indigo-600 mb-4">
-              Databases
-            </h2>
-            <p className="text-gray-600">
-              MongoDB
-            </p>
-          </div>
-
-          {/* Tools & Platforms */}
-          <div className="bg-white rounded-2xl shadow-md p-6">
-            <h2 className="text-xl font-semibold text-indigo-600 mb-4">
-              Tools & Platforms
-            </h2>
-            <p className="text-gray-600">
-              Git, GitHub, VS Code
-            </p>
-          </div>
-
-          {/* Concepts & Architecture */}
-          <div className="bg-white rounded-2xl shadow-md p-6 md:col-span-2">
-            <h2 className="text-xl font-semibold text-indigo-600 mb-4">
-              Concepts & Architecture
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              Middleware & API Structure, RESTful APIs, JSON, Axios, Fetch API,
-              MVC Architecture
-            </p>
-          </div>
-
+        {/* GRID */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
+          {skills.map((skill, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="border border-gray-600 p-6 text-center hover:border-white transition"
+            >
+              <div className="text-4xl text-white mb-4 flex justify-center">
+                {skill.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">
+                {skill.title}
+              </h3>
+              <p className="text-gray-400 text-sm">
+                {skill.desc}
+              </p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default Skills;

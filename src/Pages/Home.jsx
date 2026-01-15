@@ -6,7 +6,8 @@ import Contact from "./Contact";
 const Home = () => {
   return (
     <>
-      <section id="about">
+    <div className="p-10 min-h-screen bg-[#2b2b2b] ">
+    <section id="about">
         <PersonalDetails />
       </section>
 
@@ -21,6 +22,8 @@ const Home = () => {
       <section id="contact">
         <Contact />
       </section>
+    </div>
+      
     </>
   );
 };
