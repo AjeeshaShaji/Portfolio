@@ -5,7 +5,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen bg-[#2b2b2b] px-6 md:px-16 py-20"
+      className="min-h-screen bg-[#3a3a3a] px-6 md:px-16 py-20"
     >
       <div className="max-w-7xl mx-auto">
 
@@ -20,7 +20,7 @@ function Projects() {
           Projects
         </motion.h1>
 
-        <div className="space-y-12">
+        <div className="space-y-12 ">
 
           {/* Project Card */}
           {[
@@ -67,7 +67,7 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="border border-gray-600 p-8 hover:border-white transition"
+              className="border border-gray-600 bg-[#2b2b2b] p-8 hover:border-white transition"
             >
               <h2 className="text-2xl font-semibold text-white mb-3">
                 {project.title}

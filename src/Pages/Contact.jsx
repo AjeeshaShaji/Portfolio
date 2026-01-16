@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen bg-[#2b2b2b] px-6 md:px-16 py-20"
+      className="min-h-screen bg-[#3a3a3a] px-6 md:px-16 py-20"
     >
       <div className="max-w-6xl mx-auto">
 
@@ -27,7 +27,7 @@ function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="border border-gray-600 p-10 max-w-3xl mx-auto"
+          className="border border-gray-600 bg-[#2b2b2b] p-10 max-w-3xl mx-auto"
         >
           <h2 className="text-2xl font-semibold text-white mb-8 text-center">
             Get in Touch

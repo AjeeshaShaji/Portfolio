@@ -6,7 +6,7 @@ import Contact from "./Contact";
 const Home = () => {
   return (
     <>
-    <div className="p-10 min-h-screen bg-[#2b2b2b] ">
+    <div className="p-10 min-h-screen bg-[#3a3a3a] ">
     <section id="about">
         <PersonalDetails />
       </section>
