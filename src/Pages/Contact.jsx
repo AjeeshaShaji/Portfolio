@@ -50,7 +50,7 @@ function Contact() {
             <li className="flex items-center gap-4">
               <Phone className="w-6 h-6 text-white" />
               <a
-                href="tel:+918078005929"
+                href=""
                 className="hover:text-white transition"
               >
                 +91 80780 05929
