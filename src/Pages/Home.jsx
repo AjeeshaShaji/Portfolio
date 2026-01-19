@@ -2,6 +2,7 @@ import PersonalDetails from "../Components/PersonalDetails";
 import Projects from "./Projects";
 import Education from "./Education";
 import Contact from "./Contact";
+import Skills from "./skills";
 
 const Home = () => {
   return (
@@ -9,6 +10,10 @@ const Home = () => {
     <div className="p-10 min-h-screen bg-[#3a3a3a] ">
     <section id="about">
         <PersonalDetails />
+      </section>
+
+    <section id="skills">
+      <Skills/>
       </section>
 
       <section id="projects">

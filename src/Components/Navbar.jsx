@@ -21,7 +21,7 @@ function Navbar() {
 
         {/* Links */}
         <ul className="flex gap-4 md:gap-8">
-          {["About", "Projects", "Education", "Contact"].map((item) => (
+          {["About","Skills", "Projects", "Education", "Contact"].map((item) => (
             <li key={item} className="relative group">
               <a
                 href={`#${item.toLowerCase()}`}
