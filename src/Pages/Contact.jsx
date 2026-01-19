@@ -8,7 +8,7 @@ function Contact() {
       id="contact"
       className="min-h-screen bg-[#3a3a3a] px-6 md:px-16 py-20"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto cursor-pointer">
 
         {/* Title */}
         <motion.h1

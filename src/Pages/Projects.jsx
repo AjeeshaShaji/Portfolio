@@ -20,7 +20,7 @@ function Projects() {
           Projects
         </motion.h1>
 
-        <div className="space-y-12 ">
+        <div className="space-y-12 cursor-pointer">
 
           {/* Project Card */}
           {[
