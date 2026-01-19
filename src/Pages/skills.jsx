@@ -12,6 +12,8 @@ import {
   FaLinux,
 } from "react-icons/fa";
 import {
+  SiTailwindcss,
+   SiTypescript,
   SiExpress,
   SiMongodb,
   SiMysql,
@@ -31,9 +33,19 @@ const skills = [
     desc: "Responsive layouts and modern UI styling",
   },
   {
+    icon: <SiTailwindcss />,
+    title: "Tailwind CSS",
+    desc: "Utility-first CSS for fast UI development",
+  },
+  {
     icon: <FaJs />,
     title: "JavaScript",
     desc: "ES6+, async programming, DOM manipulation",
+  },
+  {
+    icon: <SiTypescript />,
+    title: "TypeScript",
+    desc: "Type-safe JavaScript for scalable applications",
   },
   {
     icon: <FaReact />,
@@ -56,17 +68,12 @@ const skills = [
     desc: "NoSQL database and schema design",
   },
   {
-    icon: <SiMysql />,
-    title: "MySQL",
-    desc: "Relational database and SQL queries",
-  },
-  {
     icon: <FaGitAlt />,
     title: "Git & GitHub",
     desc: "Version control and team collaboration",
   },
-  
 ];
+
 
 function Skills() {
   return (
