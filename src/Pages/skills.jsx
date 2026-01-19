@@ -72,7 +72,7 @@ const skills = [
   },
   {
     icon: <SiC />,
-    title: "C",
+    title: "C Programming",
     desc: "Programming fundamentals and logic building",
   },
   {
@@ -85,11 +85,7 @@ const skills = [
     title: "Git & GitHub",
     desc: "Version control and team collaboration",
   },
-  {
-    icon: <FaLinux />,
-    title: "Linux",
-    desc: "Basic commands and development environment",
-  },
+  
 ];
 
 function Skills() {
@@ -117,7 +113,7 @@ function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              className="bg-[#2b2b2b] border border-gray-600 p-6 text-center hover:border-white transition duration-300"
+              className="bg-[#2b2b2b] border border-gray-600 p-6 text-center cursor-pointer hover:border-white transition duration-300"
             >
               <div className="text-4xl text-white mb-4 flex justify-center">
                 {skill.icon}
