@@ -15,12 +15,12 @@ function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16"
+          className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16 "
         >
           Projects
         </motion.h1>
 
-        <div className="space-y-12 cursor-pointer">
+        <div className="space-y-12 cursor-pointer  ">
 
           {/* Project Card */}
           {[
@@ -67,7 +67,7 @@ function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
-              className="border border-gray-600 bg-[#2b2b2b] p-8 hover:border-white transition"
+              className="border border-gray-600 bg-[#2b2b2b] p-8 hover:border-white transition rounded-2xl"
             >
               <h2 className="text-2xl font-semibold text-white mb-3">
                 {project.title}

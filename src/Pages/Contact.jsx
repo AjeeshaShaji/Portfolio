@@ -27,7 +27,7 @@ function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="border border-gray-600 bg-[#2b2b2b] p-10 max-w-3xl mx-auto"
+          className="border border-gray-600 bg-[#2b2b2b] hover:border-white transition p-10 max-w-3xl mx-auto rounded-2xl"
         >
           <h2 className="text-2xl font-semibold text-white mb-8 text-center">
             Get in Touch

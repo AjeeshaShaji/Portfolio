@@ -17,7 +17,7 @@ function PersonalDetails() {
             <img
               src="/profile.jpeg"
               alt="Profile"
-              className="w-full h-[460px] object-cover"
+              className="w-full h-[460px] object-cover rounded-xl"
             />
           </motion.div>
 
@@ -45,7 +45,7 @@ function PersonalDetails() {
               scalable architecture.
             </p>
 
-            <a href="/Ajeesha_Shaji_Resume.pdf" download><button className="mt-6 px-6 py-2 border border-gray-500 text-white hover:bg-gray-700 transition">Download Resume</button></a>
+            <a href="/Ajeesha_Shaji_Resume.pdf" download><button className="mt-6 px-6 py-2 border border-gray-500 cursor-pointer rounded-xl text-white hover:bg-gray-700 transition">Download Resume</button></a>
 
           </motion.div>
         </div>
