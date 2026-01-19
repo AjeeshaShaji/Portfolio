@@ -61,26 +61,6 @@ const skills = [
     desc: "Relational database and SQL queries",
   },
   {
-    icon: <FaJava />,
-    title: "Java",
-    desc: "Object-oriented programming concepts",
-  },
-  {
-    icon: <FaPython />,
-    title: "Python",
-    desc: "Scripting and problem-solving skills",
-  },
-  {
-    icon: <SiC />,
-    title: "C Programming",
-    desc: "Programming fundamentals and logic building",
-  },
-  {
-    icon: <SiCplusplus />,
-    title: "C++",
-    desc: "OOP concepts and data structures",
-  },
-  {
     icon: <FaGitAlt />,
     title: "Git & GitHub",
     desc: "Version control and team collaboration",
