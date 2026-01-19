@@ -6,19 +6,13 @@ import {
   FaJs,
   FaReact,
   FaNodeJs,
-  FaGitAlt,
-  FaJava,
-  FaPython,
-  FaLinux,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
    SiTypescript,
   SiExpress,
   SiMongodb,
-  SiMysql,
-  SiC,
-  SiCplusplus,
 } from "react-icons/si";
 
 const skills = [
@@ -68,11 +62,14 @@ const skills = [
     desc: "NoSQL database and schema design",
   },
   {
-    icon: <FaGitAlt />,
+    icon: <FaGithub />,
     title: "Git & GitHub",
     desc: "Version control and team collaboration",
   },
 ];
+
+
+
 
 
 function Skills() {
@@ -86,8 +83,7 @@ function Skills() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16"
-        >
+          className="text-4xl md:text-5xl font-extrabold text-white text-center mb-16">
           Skills
         </motion.h1>
 
@@ -100,8 +96,8 @@ function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
-              className="bg-[#2b2b2b] border border-gray-600 p-6 text-center cursor-pointer rounded-xl hover:border-white transition duration-300"
-            >
+              className="bg-[#2b2b2b] border border-gray-600 p-6 text-center cursor-pointer rounded-xl hover:border-white transition duration-300">
+             
               <div className="text-4xl text-white mb-4 flex justify-center">
                 {skill.icon}
               </div>

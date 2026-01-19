@@ -60,11 +60,11 @@ function Education() {
               Bachelor of Computer Applications (BCA)
             </h2>
 
-            <p className="text-sm text-gray-400 mb-2">
+            <p className="text-sm text-gray-400 mb-4">
               University of Kerala 
             </p>
 
-            <p className="text-sm text-gray-400 mb-2">
+            <p className="text-sm text-gray-400 mb-4">
               Oct 2022 - Apr 2025
             </p>
 
