@@ -51,7 +51,7 @@ function PersonalDetails() {
         </div>
       </section>
 
-      <Skills />
+    
     </>
   );
 }
